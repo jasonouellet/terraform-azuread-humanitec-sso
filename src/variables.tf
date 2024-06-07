@@ -16,6 +16,7 @@ variable "display_name" {
 variable "template_display_name" {
   description = "Nom visible du gabarit de l'application à utiliser."
   type        = string
+  default     = "Microsoft Entra SAML Toolkit"
 }
 
 variable "identifier_urls" {

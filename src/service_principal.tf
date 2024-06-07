@@ -4,7 +4,7 @@ resource "azuread_service_principal" "this" {
   client_id                    = data.azuread_application.this.client_id
 #  owners                       = var.owners_sp
   app_role_assignment_required = true
-  notification_email_addresses = ["EquipeDevX@ia.ca"]
+  notification_email_addresses = ["platform_team@exemple.com"]
 
   # SAML Config
   alternative_names             = var.identifier_urls

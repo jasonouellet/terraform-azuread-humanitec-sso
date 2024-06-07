@@ -30,7 +30,7 @@ data "azurerm_client_config" "terraform_serviceprincipal" {
 }
 
 resource "azuread_group" "Humanitec_Adm" {
-  display_name       = "GMAR_APL_Humanitec_Adm_P_M"
+  display_name       = "Humanitec_Adm"
   owners             = [data.azurerm_client_config.terraform_serviceprincipal.object_id]
   security_enabled   = true
   assignable_to_role = false
@@ -38,7 +38,7 @@ resource "azuread_group" "Humanitec_Adm" {
 }
 
 resource "azuread_group" "Humanitec_Members" {
-  display_name       = "GMAR_APL_Humanitec_Usr_P"
+  display_name       = "Humanitec_Members"
   owners             = [data.azurerm_client_config.terraform_serviceprincipal.object_id]
   security_enabled   = true
   assignable_to_role = false
